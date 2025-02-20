@@ -1,0 +1,18 @@
+{
+    "id": "a4438cc6-a985-4866-9638-88e6102ccb35",
+    "version": "0.0.1",
+    "platform": "all",
+    "arch": "all",
+    "name": "Eagle Plugin Svelte Template",
+    "logo": "logo.png",
+    "keywords": [],
+    "devTools": true,
+    "preview": {
+    "bmp,gif,heic,heif,hif,icns,ico,jpeg,jpg,png,svg,tif,tiff,ttf,webp,avif,base64,jfif,insp,jxl,jpe,fbx,obj,3ds,3mf,dae,ifc,ply,stl,glb,dds,exr,hdr,tga,afdesign,afphoto,afpub,ai,c4d,cdr,clip,dwg,graffle,idml,indd,indt,mindnode,psb,psd,psdt,pxd,Principle,sketch,skt,skp,xd,xmind,m4v,mp4,webm,mov,aac,flac,m4a,mp3,ogg,wav,ttf,ttc,otf,woff,3fr,arw,cr2,cr3,crw,dng,erf,mrw,nef,nrw,orf,otf,pef,raf,raw,rw2,sr2,srw,x3f,txt,key,numbers,pages,pdf,potx,ppt,pptx,xls,xlsx,doc,docx,eddx,emmx,html,mhtml,url,xml,zip,tar,gz,bz2,7z,rar,dmg,iso,epub,jar,java,class,js,jsx,ts,tsx,vue,c,cpp,cs,h,hpp,go,py,rb,swift,sh,bat,cmd,awk,ps1,pl": {
+            "inspector": {
+                "path": "index.html",
+                "multiSelect": true
+            }
+        }
+    }
+}

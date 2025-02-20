@@ -1,0 +1,122 @@
+:root {
+    /* Common variables */
+    --font-size: 11px;
+    --font-family: -apple-system, 'SF Pro Text', Helvetica Neue, Helvetica, Roboto, Arial, PingFang SC, PingFang TC, Hiragino Sans GB, Microsoft Yahei, Microsoft Jhenghei, sans-serif;
+    --font-family-mono: 'SF Mono', 'Fira Mono', 'Roboto Mono', 'Monaco', 'Consolas', monospace;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+
+    /* Base transitions for theme changes */
+    --transition-duration: 0.2s;
+    --transition-timing: ease;
+}
+
+/* System dark mode detection */
+@media (prefers-color-scheme: dark) {
+    :root:not([theme]) {
+        --text-color: #f8f9fb;
+        --button-bg-color: rgb(42, 43, 46);
+        --button-bg-color-hovered: rgb(53, 54, 57);
+        --button-text-color: #fff;
+        --button-shadow: rgba(43, 44, 47, 0.5);
+        --hr-color: rgb(49, 49, 52);
+        --input-bg-color: rgb(25, 26, 28);
+    }
+}
+
+/* Light theme (default) */
+:root,
+body[theme="LIGHT"] {
+    --text-color: #000;
+    --button-bg-color: rgb(42, 43, 46);
+    --button-text-color: #fff;
+    --button-shadow: rgba(43, 44, 47, 0.5);
+    --hr-color: rgb(49, 49, 52);
+    --input-bg-color: rgb(25, 26, 28);
+}
+
+/* Light Gray theme */
+body[theme="LIGHTGRAY"] {
+    --text-color: #000;
+    --button-bg-color: rgb(200, 200, 200);
+    --button-text-color: #000;
+    --button-shadow: rgba(43, 44, 47, 0.3);
+    --hr-color: rgb(180, 180, 180);
+    --input-bg-color: rgb(220, 220, 220);
+}
+
+/* Gray theme */
+body[theme="GRAY"] {
+    --text-color: #fff;
+    --button-bg-color: rgb(100, 100, 100);
+    --button-text-color: #fff;
+    --button-shadow: rgba(0, 0, 0, 0.4);
+    --hr-color: rgb(80, 80, 80);
+    --input-bg-color: rgb(70, 70, 70);
+}
+
+/* Blue theme */
+body[theme="BLUE"] {
+    --text-color: #fff;
+    --button-bg-color: rgb(0, 122, 255);
+    --button-text-color: #fff;
+    --button-shadow: rgba(0, 0, 0, 0.4);
+    --hr-color: rgb(0, 102, 235);
+    --input-bg-color: rgb(0, 92, 215);
+}
+
+/* Purple theme */
+body[theme="PURPLE"] {
+    --text-color: #fff;
+    --button-bg-color: rgb(88, 86, 214);
+    --button-text-color: #fff;
+    --button-shadow: rgba(0, 0, 0, 0.4);
+    --hr-color: rgb(78, 76, 204);
+    --input-bg-color: rgb(68, 66, 194);
+}
+
+/* Dark theme */
+body[theme="DARK"] {
+    --text-color: #f8f9fb;
+    --button-bg-color: rgb(42, 43, 46);
+    --button-bg-color-hovered: rgb(53, 54, 57);
+    --button-text-color: #fff;
+    --button-shadow: rgba(43, 44, 47, 0.5);
+    --hr-color: rgb(49, 49, 52);
+    --input-bg-color: rgb(25, 26, 28);
+}
+
+body {
+    margin: 0;
+    color: var(--text-color);
+transition:
+    color var(--transition-duration) var(--transition-timing),
+    background-color var(--transition-duration) var(--transition-timing);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--hr-color);
+    width: 100%;
+    margin: 0;
+}
+
+button {
+    background-color: var(--button-bg-color);
+    width: 100%;
+    min-height: 26px;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--button-text-color);
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition:
+        background-color var(--transition-duration) var(--transition-timing),
+        color var(--transition-duration) var(--transition-timing);
+}
+
+button:hover {
+    background-color: var(--button-bg-color-hovered);
+}

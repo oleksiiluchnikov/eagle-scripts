@@ -1,0 +1,26 @@
+  {
+    "source": {
+      "include": ["src"],
+      "includePattern": ".+\\.(js|svelte)$"
+    },
+    "plugins": ["node_modules/jsdoc-svelte"],
+    "opts": {
+      "destination": "docs",
+      "template": "node_modules/clean-jsdoc-theme",
+      "theme_opts": {
+        "default_theme": "dark",
+        "title": "Eagle Svelte Plugin Template Documentation",
+        "menu": [
+          {
+            "title": "Github",
+            "link": "https://github.com/oleksiiluchnikov/eagle-plugin-svelte-template",
+            "target": "_blank"
+          }
+        ]
+      }
+    },
+    "templates": {
+      "cleverLinks": true,
+      "monospaceLinks": true
+    }
+  }

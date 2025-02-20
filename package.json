@@ -1,0 +1,68 @@
+{
+  "name": "eagle-inspector-plugin-svelte-template",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"npm run watch\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "watch": "nodemon --watch src --ext js,svelte,css,html --ignore build/ --ignore build/reload-trigger.js --exec \"npm run build\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .js,.svelte",
+    "lint:fix": "eslint . --ext .js,.svelte --fix",
+    "check": "svelte-check",
+    "typecheck": "tsc --noEmit",
+    "validate": "npm run format:check && npm run lint && npm run typecheck && npm run test",
+    "prepare": "husky install",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.7.2",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@tsconfig/svelte": "^5.0.2",
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "concurrently": "^9.1.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-svelte": "^2.35.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.1.0",
+    "@testing-library/svelte": "^4.0.5",
+    "@vitest/coverage-v8": "^1.2.2",
+    "@vitest/ui": "^1.2.2",
+    "jsdom": "^24.0.0",
+    "svelte": "^4.2.11",
+    "svelte-check": "^3.6.4",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.3"
+  },
+  "main": "vite.config.js",
+  "keywords": [
+    "eagle",
+    "plugin",
+    "svelte",
+    "template"
+  ],
+  "author": "oleksiiluchnikov",
+  "license": "MIT",
+  "description": "A template repository for creating Eagle plugins with Svelte",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksiiluchnikov/eagle-plugin-svelte-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oleksiiluchnikov/eagle-plugin-svelte-template/issues"
+  },
+  "homepage": "https://github.com/oleksiiluchnikov/eagle-plugin-svelte-template#readme"
+}
