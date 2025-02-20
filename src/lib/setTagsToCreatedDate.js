@@ -141,7 +141,7 @@ async function processFileMetadata(fileItem, exifTool) {
  * @param {Array<{filePath: string}>} fileItems - Array of items with filePaths to process
  * @returns {Promise<void>}
  */
-async function setTagsToCreateDate(fileItems) {
+async function setTagsToCreatedDate(fileItems) {
     let exifTool = null;
 
     try {
@@ -189,4 +189,4 @@ async function setTagsToCreateDate(fileItems) {
     }
 }
 
-export { setTagsToCreateDate };
+export { setTagsToCreatedDate as setTagsToCreateDate };

@@ -1,7 +1,7 @@
 <script>
 import { onMount } from 'svelte';
 import Button from './components/Button.svelte';
-import { setTagsToCreateDate } from './lib/modifyBirthtime.js';
+import { setTagsToCreatedDate } from './lib/setTagsToCreatedDate';
 
 /** @type {any[]} */
 $: items = [];
@@ -26,9 +26,9 @@ onMount(async () => {
 
 <main>
     <Button
-        text="Set Tags to Creation Date"
+        text="Set Tags to Created Date"
         onClick={() => {
-            setTagsToCreateDate(items);
+            setTagsToCreatedDate(items);
         }}
     />
     <hr />
