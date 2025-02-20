@@ -24,23 +24,23 @@
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.7.2",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@testing-library/svelte": "^4.0.5",
     "@tsconfig/svelte": "^5.0.2",
     "@types/node": "^20.11.19",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
+    "@vitest/coverage-v8": "^1.2.2",
+    "@vitest/ui": "^1.2.2",
     "concurrently": "^9.1.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-svelte": "^2.35.1",
     "husky": "^9.0.11",
+    "jsdom": "^24.0.0",
     "lint-staged": "^15.2.2",
     "nodemon": "^3.0.3",
     "prettier": "^3.2.5",
     "prettier-plugin-svelte": "^3.1.0",
-    "@testing-library/svelte": "^4.0.5",
-    "@vitest/coverage-v8": "^1.2.2",
-    "@vitest/ui": "^1.2.2",
-    "jsdom": "^24.0.0",
     "svelte": "^4.2.11",
     "svelte-check": "^3.6.4",
     "tslib": "^2.6.2",
@@ -64,5 +64,8 @@
   "bugs": {
     "url": "https://github.com/oleksiiluchnikov/eagle-plugin-svelte-template/issues"
   },
-  "homepage": "https://github.com/oleksiiluchnikov/eagle-plugin-svelte-template#readme"
+  "homepage": "https://github.com/oleksiiluchnikov/eagle-plugin-svelte-template#readme",
+  "dependencies": {
+    "exiftool-vendored": "^29.1.0"
+  }
 }

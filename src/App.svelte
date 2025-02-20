@@ -1,6 +1,7 @@
 <script>
 import { onMount } from 'svelte';
 import Button from './components/Button.svelte';
+import { setTagsToCreateDate } from './lib/modifyBirthtime.js';
 
 /** @type {any[]} */
 $: items = [];
@@ -19,20 +20,17 @@ onMount(async () => {
         console.error('Failed to get selected items:', error);
     }
 });
+
+
 </script>
 
 <main>
-    <h1>First item: {name} of {items.length} items</h1>
-    <div class="row">
-        <Button
-            text="Increment"
-            onClick={() => count += 1}
-        />
-        <Button
-            text="Decrement"
-            onClick={() => count -= 1}
-        />
-    </div>
+    <Button
+        text="Set Tags to Creation Date"
+        onClick={() => {
+            setTagsToCreateDate(items);
+        }}
+    />
     <hr />
     <Button
         text="Reload"

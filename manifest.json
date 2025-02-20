@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "platform": "all",
     "arch": "all",
-    "name": "Eagle Plugin Svelte Template",
+    "name": "Scripts",
     "logo": "logo.png",
     "keywords": [],
     "devTools": true,
